@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from './header';
 
 export default function Eide(){
     return (
@@ -8,6 +9,7 @@ export default function Eide(){
                 <meta name="description" content="Eide Bailly Suite for Utah Jazz" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+            <Header/>
             <h1>Eide Bailly Suite Level</h1>
             <p>
                 ABOUT
