@@ -9,7 +9,7 @@ export default function header(){
             <div className="flex justify-between w-1/4 text-yellow-300">
                 <Link href='/'><span className="duration-100 ease-in hover:font-bold hover:cursor-pointer">Luxury Suites</span></Link>
                 <Link href='/eide_bailly_suite'><span className="duration-100 ease-in hover:font-bold hover:cursor-pointer">Exclusive Clubs</span></Link>
-                <Link href='/contact_us'><span className="duration-100 ease-in hover:font-bold hover:cursor-pointer">Contact Us</span></Link>
+                <Link href='#contact_us'><span className="duration-100 ease-in hover:font-bold hover:cursor-pointer">Contact Us</span></Link>
             </div>
         </div>
     )
