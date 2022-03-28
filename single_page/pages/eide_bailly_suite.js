@@ -1,16 +1,38 @@
-import Head from 'next/head';
-import Header from './header';
+import Link from 'next/link'
+import Head from 'next/head'
+import Header from './header'
+import Digital from './digital_tickets'
+import Contact from './contact_us'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFileArrowDown, faCircleInfo } from '@fortawesome/free-solid-svg-icons'
+
 
 export default function Eide(){
     return (
-        <div>
+        <div className='flex flex-col items-center'>
             <Head>
                 <title>Eide Bailly Suite</title>
                 <meta name="description" content="Eide Bailly Suite for Utah Jazz" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Header/>
-            <h1>Eide Bailly Suite Level</h1>
+            <div className='flex justify-center w-full pb-10 text-white bg-black'><Header/></div>
+            <div className='flex items-center justify-between w-4/5 pb-10 mt-10'>
+                <h1 className='text-4xl font-bold'>Eide Bailly Suite Level</h1>
+                <div className='flex'>
+                    <a href='' className='flex items-center justify-center px-3 py-1 mr-10 border border-black rounded shadow-sm w-fit hover:bg-yellow-300 hover:text-black'>
+                        <FontAwesomeIcon icon={faFileArrowDown} className="w-3"/>
+                        <span className='pl-2 font-bold'>Download Info</span>
+                    </a>
+                    <a href='#contact_us' className='flex items-center justify-center px-3 py-1 font-bold border border-black rounded shadow-sm w-fit hover:bg-yellow-300 hover:text-black'>
+                        Contact Us
+                    </a>   
+                </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbHBhcGVyfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" className='w-full h-[400px]'/>
+            <div className='flex items-center justify-center w-full bg-yellow-300'>
+                <FontAwesomeIcon icon={faCircleInfo} className='w-8'/>
+                <p className='w-3/4 pl-5'>Did you know? Wheter you're closing an important budiness deal or celebrating with your employees, renting a suite for a Jazz game is perfect for any occasion. Call or text 801.325.2203 to learn more.</p>
+            </div>
             <p>
                 ABOUT
                 Location
@@ -73,28 +95,8 @@ export default function Eide(){
             <p>
                 Tailor your food and beverage experience to your group each night. Choose from an expansive menu based on who you will be hosting for that event. Submit your food and beverage orders 2 business days prior to the event. Access to your suite and food service will start 90 minutes prior to tipoff
             </p>
-            <p>
-                DIGITAL TICKETS
-                All tickets will be digital and accessible in the Utah Jazz + Vivint Arena App. Printed tickets will no longer be an option.
-            </p>
-            <p>
-                This move to digital-only has been made for several reasons:
-
-                Helps to prevent fraudulent tickets from being circulated
-                Increases safety and security by providing an easier way to track who’s using tickets and entering the arena
-                Allows for a convenient transfer process—you can transfer your tickets with the touch of a button
-                - Helps to prevent fraudulent tickets from being circulated.
-                - Increases safety and security by providing an easier way to track who’s using tickets and entering the arena.
-                - Allows for a convenient transfer process—you can transfer your tickets with the touch of a button.
-            </p>
-            <p>
-                If you have questions or concerns about digital tickets, please contact your account representative.
-
-                CONTACT US
-                801-325-2105
-                bizdev@utahjazz.com
-                With options like single-game tickets, suite rentals and special group rates, experiencing Utah Jazz basketball has never been more convenient! Just let us know what you’re interested in and we can customize a package to fit your group and budget.
-            </p>
+            <Digital/>
+            <Contact/>
         </div>
     )
 }

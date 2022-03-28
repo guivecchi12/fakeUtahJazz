@@ -1,5 +1,5 @@
 import Link from 'next/link'
-export default function header(){
+export default function Header(){
     return(
         <div className="flex justify-between w-4/5 px-2 py-3 border-b border-white border-solid">
             <div className='flex'>
