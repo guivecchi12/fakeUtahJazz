@@ -106,7 +106,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Contact Us Section */}
       <Contact/>
     </div>
   </>
