@@ -28,14 +28,14 @@ export default function Digital_tickets(){
           </p>
         </div>
         <iframe
-        width="653"
-        height="380"
-        src={"https://www.youtube.com/embed/K7WURKGsJmo"}
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        title="Embedded youtube"
-        className='py-5 pl-10'
+          width="653"
+          height="380"
+          src={"https://www.youtube.com/embed/K7WURKGsJmo"}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title="Embedded youtube"
+          className='py-5 pl-10'
         />
       </div>
       <Link href=''>

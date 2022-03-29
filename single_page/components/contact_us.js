@@ -29,8 +29,8 @@ export default function Contact(){
     <div id="contact_us" className='flex px-40 py-20 text-2xl text-white bg-neutral-800'>
         <div className='w-1/2'>
           <h1 className='text-4xl font-bold'>CONTACT US</h1>            
-            <p className='flex pt-10'><FontAwesomeIcon icon={faSquarePhone} style={{color:'yellow'}} className="pr-3 w-7"/>801-325-2105</p>
-            <p className='flex pt-10'><FontAwesomeIcon icon={faEnvelope} style={{color:'yellow'}} className="pr-3 w-7"/>bizdev@utahjazz.com</p>
+            <a href="tel:801-325-2105" className='flex pt-10'><FontAwesomeIcon icon={faSquarePhone} style={{color:'yellow'}} className="pr-3 w-7"/>801-325-2105</a>
+            <a href="mailto:bizdev@utahjazz.com" className='flex pt-10'><FontAwesomeIcon icon={faEnvelope} style={{color:'yellow'}} className="pr-3 w-7"/>bizdev@utahjazz.com</a>
             <br></br>
             <p>
               With options like single-game tickets, suite rentals and special group rates, experiencing Utah Jazz basketball has never been more convenient! Just let us know what you’re interested in and we can customize a package to fit your group and budget.

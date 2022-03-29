@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import Header from './header'
-import Digital from './digital_tickets'
-import Contact from './contact_us'
+import Header from '../components/header'
+import Digital from '../components/digital_tickets'
+import Contact from '../components/contact_us'
 
 
 export default function Home() {
