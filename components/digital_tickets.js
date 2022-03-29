@@ -4,8 +4,8 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
 export default function Digital_tickets(){
   return(
-    <div className='flex flex-col w-full px-40 py-20 text-black bg-neutral-200'>
-      <div className='flex justify-between'>
+    <div className='flex flex-col w-full px-5 py-20 text-black md:px-40 bg-neutral-200'>
+      <div className='flex flex-col items-center justify-between md:flex-row'>
         <div>
           <h1 className='text-4xl font-bold'>DIGITAL TICKETS</h1>
           <br/>
@@ -35,7 +35,7 @@ export default function Digital_tickets(){
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           title="Embedded youtube"
-          className='py-5 pl-10'
+          className='py-5 md:pl-10'
         />
       </div>
       <Link href=''>
