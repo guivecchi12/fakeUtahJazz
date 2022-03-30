@@ -1,4 +1,4 @@
-import 'tw-elements';
+// import 'tw-elements';
 
 const Carousel = () => {
     return(<div className='bg-eide h-62 w-full'/>)
