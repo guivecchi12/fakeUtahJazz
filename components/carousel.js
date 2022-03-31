@@ -11,7 +11,7 @@ export default function NextJsCarousel() {
   return (
     <div className='flex justify-center w-full bg-gray-900'>
 			<Carousel 
-        className='w-1/3'
+        className='md:w-1/3'
         showThumbs={false}
         autoPlay={true}
         showArrows={false}
