@@ -1,89 +1,31 @@
-import Script from 'next/script'
+import React from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
-const Carousel = () => {
-  return(
-    <>
-      <Script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"/>
-      
-      <div id="carouselExampleCaptions" className="carousel slide relative bg-black w-full" data-bs-ride="carousel">
-        <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div className="carousel-inner relative w-full overflow-hidden bg-black h-96">
-          <div className="carousel-item active relative float-left w-full">
-            <img
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
-              className="block w-full"
-              alt="..."
-            />
-            <div className="carousel-caption hidden md:block absolute text-center">
-              <h5 className="text-xl">First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div className="carousel-item relative float-left w-full">
-            <img
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
-              className="block w-full"
-              alt="..."
-            />
-            <div className="carousel-caption hidden md:block absolute text-center">
-              <h5 className="text-xl">Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div className="carousel-item relative float-left w-full">
-            <img
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
-              className="block w-full"
-              alt="..."
-            />
-            <div className="carousel-caption hidden md:block absolute text-center">
-              <h5 className="text-xl">Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
-    </>
-  )
-}
-
-export default Carousel
+export default function NextJsCarousel() {
+  const images = [
+    "https://images.unsplash.com/photo-1602357280104-742c517a1d82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3BvcnQlMjBjb3VydHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1511415221243-04dab195b318?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c3BvcnQlMjBjb3VydHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+    "https://images.unsplash.com/photo-1474224017046-182ece80b263?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNwb3J0JTIwY291cnR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  ]
+  return (
+    <div className='flex justify-center w-full bg-gray-900'>
+			<Carousel 
+        className='w-1/3'
+        showThumbs={false}
+        autoPlay={true}
+        showArrows={false}
+      >
+				<div>
+					<img src={images[0]} alt="image1"/>
+				</div>
+				<div>
+					<img src={images[1]} alt="image2" />
+				</div>
+				<div>
+					<img src={images[2]} alt="image3"/>
+				</div>
+			</Carousel>
+    </div>
+  );
+};
