@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Utah Jazz</title>
         <meta name="description" content="single page website for Utah Jazz" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/basketBall.ico" />
       </Head>
 
       <div className='flex flex-col items-center w-full text-white bg-black'>
@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* White Section */}
       <div className="flex items-center justify-center md:bg-white">
-        <div className='relative flex flex-col items-center justify-center bottom-20 md:flex-row h-full'>
+        <div className='relative flex flex-col items-center justify-center h-full bottom-20 md:flex-row'>
           <div className="flex flex-col w-full bg-black md:border md:border-solid md:mr-10 md:w-1/3">
             <div className="bg-center bg-cover h-52 bg-eide">
             </div>
