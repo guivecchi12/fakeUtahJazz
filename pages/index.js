@@ -13,9 +13,10 @@ export default function Home() {
         <meta name="description" content="single page website for Utah Jazz" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <div className='flex flex-col items-center w-full text-white bg-black'>
-        <Header/>
-        <div className='w-4/5 border-b border-white'/>
+      <Header/>
+      <div className='w-4/5 border-b border-white'/>
       </div>
       
       {/* Black Section */}
@@ -44,7 +45,7 @@ export default function Home() {
             </div>  
           </div>
 
-          <div className="flex flex-col w-full bg-black md:border md:border-solid  md:w-1/3">
+          <div className="flex flex-col w-full bg-black md:border md:border-solid md:w-1/3">
             <div className="bg-center bg-cover h-52 bg-exclusive">
             </div>
             <div className="flex flex-col justify-center px-14 md:h-[375px]">
