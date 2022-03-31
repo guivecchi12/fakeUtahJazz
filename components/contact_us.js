@@ -33,14 +33,14 @@ export default function Contact(){
           {/* Phone number */}
           <Link href="tel:801-325-2105">
             <div className='flex pt-5 md:pt-10 hover:cursor-pointer'>
-              <FontAwesomeIcon icon={faSquarePhone} style={{color:'yellow'}} className="pr-3 max-w-[1.75rem]"/>
+              <FontAwesomeIcon icon={faSquarePhone} style={{color:'yellow'}} className="pr-3 w-7"/>
               <p>801-325-2105</p>
             </div> 
           </Link> 
           {/* Email */}
           <Link  href="mailto:bizdev@utahjazz.com">
             <div className='flex pt-3 md:pt-10 hover:cursor-pointer'>
-              <FontAwesomeIcon icon={faEnvelope} style={{color:'yellow'}} className="pr-3 max-w-[1.75rem]"/>
+              <FontAwesomeIcon icon={faEnvelope} style={{color:'yellow'}} className="pr-3 w-7"/>
               <p>bizdev@utahjazz.com</p>
             </div>
           </Link>
