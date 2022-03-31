@@ -37,7 +37,7 @@ export default function Eide(){
             </div>
 
             {/* Info */}
-            <div className='flex flex-col items-center justify-center w-full text-white bg-black'>
+            <div className='flex flex-col items-center justify-center w-full pl-5 text-white bg-black md:pl-0'>
 
                 {/* About */}
                 <div className='flex flex-col justify-between w-full py-10 border-b md:w-3/4 md:flex-row md:items-start'>
@@ -196,7 +196,7 @@ export default function Eide(){
                     </div>
                 </div>
             </div>
-            <div className='flex items-end h-[25rem] text-white bg-tailor_food bg-center'>
+            <div className='flex items-end h-[25rem] text-white bg-tailor_food bg-center bg-cover md:bg-contain'>
                 <p className='flex items-center justify-center bg-black bg-opacity-80'>
                     <span className='md:w-[60%] p-5 text-center'>
                         Tailor your food and beverage experience to your group each night. Choose from an expansive menu based on who you will be hosting for that event. Submit your food and beverage orders 2 business days prior to the event. Access to your suite and food service will start 90 minutes prior to tipoff
