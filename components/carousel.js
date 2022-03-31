@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 export default function NextJsCarousel() {
-  
+  // images being used
   const images = [
     "https://images.unsplash.com/photo-1602357280104-742c517a1d82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3BvcnQlMjBjb3VydHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
     "https://images.unsplash.com/photo-1511415221243-04dab195b318?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c3BvcnQlMjBjb3VydHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
