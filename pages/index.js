@@ -31,11 +31,11 @@ export default function Home() {
 
       {/* White Section */}
       <div className="flex items-center justify-center md:bg-white">
-        <div className='relative flex flex-col items-center justify-center bottom-20 md:flex-row'>
+        <div className='relative flex flex-col items-center justify-center bottom-20 md:flex-row h-full'>
           <div className="flex flex-col w-full bg-black md:border md:border-solid md:mr-10 md:w-1/3">
             <div className="bg-center bg-cover h-52 bg-eide">
             </div>
-            <div className="flex flex-col justify-center px-14 md:h-[342px]">
+            <div className="flex flex-col justify-center px-14 md:h-[375px]">
               <h4 className='py-5 text-xl text-yellow-300'>LUXURY SUITES</h4>
               <p>
                 Your suite can enhance your corporate profile and give you an advantage over your competitors. It offers the chance to communicate your message in a luxurious setting while making entertaining as easy as it is elegant. Take advantage of the most unique and exciting way to entertain in Utah by becoming a Vivint Arena luxury suite holder.
@@ -44,10 +44,10 @@ export default function Home() {
             </div>  
           </div>
 
-          <div className="flex flex-col w-full bg-black md:border md:border-solid md:mr-10 md:w-1/3">
+          <div className="flex flex-col w-full bg-black md:border md:border-solid  md:w-1/3">
             <div className="bg-center bg-cover h-52 bg-exclusive">
             </div>
-            <div className="flex flex-col justify-center px-14 md:h-[342px]">
+            <div className="flex flex-col justify-center px-14 md:h-[375px]">
               <h4 className='py-5 text-xl text-yellow-300'>EXCLUSIVE CLUBS</h4>
               <p>
                 Membership into one of our exlusive clubs can enhance your corporate profile and give you an advantage over your competitors. It offers the chance to communicate your message in a luxurious setting while making entertaining as easy as it is elegant. Take advantage of the most unique and exciting way to entertain in Utah with one of our exclusive club memberships at Vivint Arena.
