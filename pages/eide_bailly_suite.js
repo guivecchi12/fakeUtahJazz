@@ -37,7 +37,7 @@ export default function Eide(){
             </div>
 
             {/* Info */}
-            <div className='flex flex-col items-center justify-center w-full text-white bg-black'>
+            <div className='flex flex-col items-center justify-center w-full pl-5 text-white bg-black md:pl-0'>
 
                 {/* About */}
                 <div className='flex flex-col justify-between w-full py-10 border-b md:w-3/4 md:flex-row md:items-start'>
