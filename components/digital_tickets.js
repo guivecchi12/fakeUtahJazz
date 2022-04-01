@@ -7,7 +7,7 @@ export default function Digital_tickets(){
     <div className='flex flex-col w-full px-5 py-20 text-black md:px-40 bg-neutral-200'>
       <div className='flex flex-col items-center justify-between md:flex-row'>
         <div>
-          <h1 className='text-4xl font-bold'>DIGITAL TICKETS</h1>
+          <h1 className='text-4xl font-bold'>Digital Tickets</h1>
           <br/>
           <p className='text-lg font-bold'>
             All tickets will be digital and accessible in the Utah Jazz + Vivint Arena App. Printed tickets will no longer be an option.

@@ -8,7 +8,8 @@ export default function Contact(){
     userInput1: '',
     userInput2: '',
     userInput3: '',
-    option: ''
+    option: '',
+    shortText: ''
   }
   const [user, setUser] = useState(defaultUser)
 
@@ -21,8 +22,7 @@ export default function Contact(){
   
   const formSubmit = (e) =>{
     e.preventDefault()
-    console.log("Submited user: ")
-    console.log(user)
+    alert("Thank you for your input, \nWe'll get back to you as soon as possible")
     setUser(defaultUser)
   }
 
@@ -34,14 +34,14 @@ export default function Contact(){
           <Link href="tel:801-325-2105">
             <div className='flex pt-5 md:pt-10 hover:cursor-pointer'>
               <FontAwesomeIcon icon={faSquarePhone} style={{color:'yellow'}} className="pr-3 w-7"/>
-              <p>801-325-2105</p>
+              <p className='jazzMonumentRegular'>801-325-2105</p>
             </div> 
           </Link> 
           {/* Email */}
           <Link  href="mailto:bizdev@utahjazz.com">
             <div className='flex pt-3 md:pt-10 hover:cursor-pointer'>
               <FontAwesomeIcon icon={faEnvelope} style={{color:'yellow'}} className="pr-3 w-7"/>
-              <p>bizdev@utahjazz.com</p>
+              <p className='jazzMonumentRegular'>bizdev@utahjazz.com</p>
             </div>
           </Link>
           <br></br>
@@ -52,7 +52,7 @@ export default function Contact(){
         </div>
         <form onSubmit={formSubmit} className='flex flex-col w-1/2 mt-7 md:mt-0 md:w-2/5 md:pl-20'>
 
-          <label htmlFor='input'>User Input</label>
+          <label htmlFor='input' className='mb-1'>User Input</label>
           <input 
             type="text" 
             className='pl-1 text-black rounded-tr-lg rounded-bl-lg'
@@ -60,9 +60,10 @@ export default function Contact(){
             onChange={handleChange}
             value={user.userInput1}
             label="userInput1"
+            required
           />
 
-          <label htmlFor='input' >User Input</label>
+          <label htmlFor='input' className='mb-1 md:pt-5' >User Input</label>
           <input 
             type="text" 
             className='pl-1 text-black rounded-tr-lg rounded-bl-lg '
@@ -70,24 +71,42 @@ export default function Contact(){
             onChange={handleChange}
             value={user.userInput2}
             label="userInput2"
+            required
           />
 
-          <label htmlFor='input'>User Input</label>
+          <label htmlFor='input' className='mb-1 md:pt-5'>User Input</label>
           <input 
             type="text" 
-            className='pl-1 text-black rounded-tr-lg rounded-bl-lg '
+            className='pl-1 text-black rounded-tr-lg rounded-bl-lg'
             name="userInput3"
             onChange={handleChange}
             value={user.userInput3}
             label="userInput3"
+            required
           />
 
-          <label htmlFor='input'>Options</label>
-          <select onChange={handleChange} value={user.option} name="option" className='text-black rounded-tr-lg rounded-bl-lg' required>
+          <label htmlFor='input' className='mb-1 md:pt-5'>Options</label>
+          <select 
+            onChange={handleChange}
+            value={user.option}
+            name="option"
+            className='text-black rounded-tr-lg rounded-bl-lg' 
+            required
+          >
             <option value="" disabled selected>Select...</option>
             <option value="Eide">Eide</option>
           </select>
-          <button className='flex items-center px-4 py-1 my-3 text-base font-bold text-black duration-300 ease-in bg-yellow-300 border border-black rounded w-fit hover:text-black hover:bg-white'>Submit</button>
+
+          <label htmlFor='input' className='mb-1 md:pt-5'>Short text</label>
+          <textarea
+            className='h-24 pl-1 text-sm text-black align-text-top rounded-tr-lg rounded-bl-lg md:full'
+            name="shortText"
+            onChange={handleChange}
+            value={user.shortText}
+            label="shortText"
+            required
+          />
+          <button className='flex items-center px-4 py-1 my-3 text-base text-black uppercase duration-300 ease-in bg-yellow-300 border border-black rounded jazzBold w-fit hover:text-black hover:bg-white'>Submit</button>
         </form>
       </div>
   )

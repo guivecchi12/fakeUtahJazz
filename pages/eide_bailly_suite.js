@@ -42,7 +42,7 @@ export default function Eide(){
                 {/* About */}
                 <div className='flex flex-col justify-between w-full py-10 border-b md:w-3/4 md:flex-row md:items-start'>
                     <h2 className='self-start text-3xl font-bold'>About</h2>
-                    <div className='flex items-start ml-5 md:ml-0'>
+                    <div className='flex items-start ml-5 md:ml-0 md:w-[24%]'>
                         <div className='w-5 pt-2 mr-2'><FontAwesomeIcon icon={faStreetView} style={{color:'yellow'}}/></div>
                         <div>
                             <h3 className='pb-2 text-2xl font-bold'>Location</h3>
@@ -50,14 +50,14 @@ export default function Eide(){
                             <button className='flex items-center px-3 py-1 font-bold text-black duration-300 ease-in bg-[#fffb07] border border-black rounded w-fit hover:text-black hover:bg-white'>View Arena Map</button>
                         </div> 
                     </div>
-                    <div className='flex items-start pt-2 ml-5 md:pt-0 md:ml-0'>
+                    <div className='flex items-start pt-2 ml-5 md:pt-0 md:ml-0 md:w-[24%]'>
                         <div className='w-6 pt-2 mr-2'><FontAwesomeIcon icon={faUsers} style={{color:'yellow'}}/></div>
                         <div>
                             <h3 className='pb-2 text-2xl font-bold'><span>Capacity</span></h3>
                             <p>Acommodates 18-32 people</p>
                         </div>
                     </div>
-                    <div className='flex items-start pt-2 ml-5 md:pt-0 md:pr-20 md:ml-0'>
+                    <div className='flex items-start pt-2 ml-5 md:pt-0 md:pr-20 md:ml-0 md:w-[25%]'>
                         <div className='w-4 pt-2 mr-2'><FontAwesomeIcon icon={faLightbulb} style={{color:'yellow'}}/></div>
                         <div>
                             <h3 className='pb-2 text-2xl font-bold'>Event Availability</h3>
