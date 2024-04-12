@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Utah Jazz</title>
-        <meta name="description" content="single page website for Utah Jazz" />
+        <title>Utah Sports</title>
+        <meta name="description" content="single page website for Utah Sports" />
         <link rel="icon" href="/basketBall.ico" />
       </Head>
 
@@ -30,7 +30,7 @@ export default function Home() {
               Whether you’re entertaining business clients, closing a major
               deal, or socializing with family and friends, a luxury suite
               provides all the convenience, comfort and service you desire. As
-              the home of the Utah Jazz and the country’s most popular touring
+              the home of the Utah Sports and the country’s most popular touring
               musical acts and family shows, Vivint Arena is the place to meet,
               greet, see and be seen in Utah.
             </p>

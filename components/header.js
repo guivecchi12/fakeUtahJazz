@@ -9,7 +9,7 @@ export default function Header() {
         ></img>
         <Link href="/">
           <h1 className="p-1 text-white hover:cursor-pointer">
-            UTAH JAZZ PREMIUM SEATING
+            UTAH SPORTS PREMIUM SEATING
           </h1>
         </Link>
       </div>

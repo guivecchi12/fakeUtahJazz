@@ -12,7 +12,7 @@ export default function Eide(){
         <div className='flex flex-col items-center'>
             <Head>
                 <title>Eide Bailly Suite</title>
-                <meta name="description" content="Eide Bailly Suite for Utah Jazz" />
+                <meta name="description" content="Eide Bailly Suite for Utah Sports" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className='flex justify-center w-full text-white bg-black'><Header/></div>
@@ -25,15 +25,15 @@ export default function Eide(){
                     </a>
                     <a href='#contact_us' className='flex items-center justify-center px-3 py-1 font-bold border border-black rounded shadow-sm w-fit hover:bg-yellow-300 hover:text-black'>
                         Contact Us
-                    </a>   
+                    </a>
                 </div>
             </div>
 
             <Carousel/>
-            
+
             <div className='flex items-center justify-center w-full py-3 bg-[#fffb07]'>
                 <FontAwesomeIcon icon={faCircleInfo} className='w-8'/>
-                <p className='w-3/4 pl-5'>Did you know? Wheter you're closing an important budiness deal or celebrating with your employees, renting a suite for a Jazz game is perfect for any occasion. Call or text 801.325.2203 to learn more.</p>
+                <p className='w-3/4 pl-5'>Did you know? Wheter you're closing an important budiness deal or celebrating with your employees, renting a suite for a Sports game is perfect for any occasion. Call or text 801.325.2203 to learn more.</p>
             </div>
 
             {/* Info */}
@@ -48,7 +48,7 @@ export default function Eide(){
                             <h3 className='pb-2 text-2xl font-bold'>Location</h3>
                             <p className='pb-2'>Suite Level (Level 4)</p>
                             <button className='flex items-center px-3 py-1 font-bold text-black duration-300 ease-in bg-[#fffb07] border border-black rounded w-fit hover:text-black hover:bg-white'>View Arena Map</button>
-                        </div> 
+                        </div>
                     </div>
                     <div className='flex items-start pt-2 ml-5 md:pt-0 md:ml-0 md:w-[24%]'>
                         <div className='w-6 pt-2 mr-2'><FontAwesomeIcon icon={faUsers} style={{color:'yellow'}}/></div>
@@ -62,7 +62,7 @@ export default function Eide(){
                         <div>
                             <h3 className='pb-2 text-2xl font-bold'>Event Availability</h3>
                             <p className='pb-2'>
-                                Utah Jazz Games 
+                                Utah Sports Games
                                 (including playoffs)
                                 <br/>Concerts and select
                             </p>
@@ -120,7 +120,7 @@ export default function Eide(){
                         </div>
                         <div className='flex items-start'>
                             <div className='w-5 pt-1 min-w-[20px]'><FontAwesomeIcon icon={faCircleCheck} style={{color:'yellow'}}/></div>
-                            <p className='pl-2'>Food credit for catering to both Utah Jazz games and arena events</p>
+                            <p className='pl-2'>Food credit for catering to both Utah Sports games and arena events</p>
                         </div>
                     </div>
                 </div>
@@ -200,10 +200,10 @@ export default function Eide(){
                 <p className='flex items-center justify-center bg-black bg-opacity-80'>
                     <span className='md:w-[60%] p-5 text-center'>
                         Tailor your food and beverage experience to your group each night. Choose from an expansive menu based on who you will be hosting for that event. Submit your food and beverage orders 2 business days prior to the event. Access to your suite and food service will start 90 minutes prior to tipoff
-                    </span> 
+                    </span>
                 </p>
             </div>
-            
+
             <Digital/>
             <Contact/>
         </div>
